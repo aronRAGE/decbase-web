@@ -128,6 +128,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+}
 /*---------CSS RESET END--------*/
 
 /*---------Font SET START-------*/
@@ -185,3 +191,33 @@ table {
   font-style: normal;
 }
 /*---------Font SET END-------*/
+
+/*---------HEADER START-------*/
+header {
+  display: flex;
+  justify-content: center;
+}
+.header-content {
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar li a {
+  margin: 0 0.6rem;
+  padding: 0.5rem 0.9rem;
+  text-transform: uppercase;
+  font-size: small;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 500;
+}
+.signup {
+  background-color: #caa892;
+  border-radius: 1rem 0 1rem 0px;
+  text-transform: capitalize !important;
+  color: #fff !important;
+}
+
+/*---------HEADER END-------*/
