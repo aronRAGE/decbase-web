@@ -135,6 +135,7 @@ button {
 .container {
   font-family: 'Poppins', sans-serif;
   display: flex;
+  align-items: center;
   width: 100%;
   max-width: 1400px;
 }
@@ -197,9 +198,12 @@ button {
 /*---------Font SET END-------*/
 
 /*---------HEADER START-------*/
-header {
+header,
+section {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 0.9rem;
 }
 .header-content {
   justify-content: space-between;
@@ -210,7 +214,6 @@ header {
   flex-flow: wrap;
 }
 .navigation-btn {
-  margin: 0 0.6rem;
   padding: 0.5rem 0.9rem;
   text-transform: uppercase;
   font-size: small;
@@ -218,11 +221,11 @@ header {
   text-decoration: none;
   font-weight: 500;
 }
-.signup {
-  background-color: #caa892;
+.btn-design {
   border-radius: 1rem 0 1rem 0px;
-  text-transform: capitalize;
+
   color: #fff;
+  box-shadow: 0px 4px 4px 1px #00000080;
 }
 .nav-sign {
   display: flex;
@@ -230,4 +233,50 @@ header {
 .nav-sign button {
   margin-left: 3rem;
 }
+.signup {
+  background-color: #caa892;
+  margin: 0 0.6rem;
+  text-transform: capitalize;
+}
+.illustration {
+  border-radius: 10rem 0 10rem 0px;
+}
+.image-wrapper {
+  position: relative;
+}
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: -2rem;
+  bottom: -2rem;
+  border: 2px solid #d3b191; /* Цвет и толщина рамки */
+  border-radius: 10rem 0 10rem 0px;
+  z-index: -1; /* Отправляем за изображение */
+}
 /*---------HEADER END-------*/
+.subtitle {
+  color: #646464;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0.4rem;
+}
+.main-title {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.section-text {
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+  color: #646464;
+  line-height: 1.9rem;
+  font-size: 1.1rem;
+}
+.contact {
+  background-color: #37806b;
+  padding: 0.5rem 1.7rem;
+  text-transform: uppercase;
+}
