@@ -128,16 +128,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-button {
-  background-color: #fff;
-  border: 0;
-}
-.container {
+body {
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1400px;
 }
 /*---------CSS RESET END--------*/
 
@@ -198,6 +190,15 @@ button {
 /*---------Font SET END-------*/
 
 /*---------HEADER START-------*/
+button {
+  background-color: #fff;
+  border: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
 header,
 section {
   display: flex;
@@ -205,7 +206,8 @@ section {
   margin-bottom: 5rem;
   margin-top: 0.9rem;
 }
-.header-content {
+.content-flex {
+  display: flex;
   justify-content: space-between;
 }
 .navbar {
@@ -279,4 +281,24 @@ section {
   background-color: #37806b;
   padding: 0.5rem 1.7rem;
   text-transform: uppercase;
+}
+
+.services {
+  flex-flow: column;
+  align-items: flex-start;
+}
+.card-list ul {
+  display: flex;
+}
+.card-shadow {
+  box-shadow: 0px 1px 8px 1px #00000080;
+}
+.title {
+  color: #000;
+}
+.card-list ul li {
+  padding: 1.5rem;
+}
+.card {
+  border-radius: 3rem 0 3rem 0px;
 }
