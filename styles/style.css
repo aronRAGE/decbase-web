@@ -209,6 +209,7 @@ section {
 .content-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar {
   display: flex;
@@ -275,7 +276,7 @@ section {
   margin-bottom: 2rem;
   color: #646464;
   line-height: 1.9rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .contact {
   background-color: #37806b;
@@ -289,6 +290,7 @@ section {
 }
 .card-list ul {
   display: flex;
+  gap: 2rem;
 }
 .card-shadow {
   box-shadow: 0px 1px 8px 1px #00000080;
@@ -296,11 +298,23 @@ section {
 .title {
   color: #000;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 .card-list ul li {
   padding: 2.1rem;
+  display: flex;
+  gap: 2rem;
 }
 .card {
   border-radius: 3rem 0 3rem 0px;
+}
+.card img {
+  height: fit-content;
+}
+.card:nth-child(even) {
+  background-color: #d3b191;
+}
+.white-txt {
+  color: #fff;
 }
