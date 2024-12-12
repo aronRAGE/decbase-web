@@ -203,7 +203,7 @@ header,
 section {
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   margin-top: 0.9rem;
 }
 .content-flex {
@@ -254,9 +254,9 @@ section {
   left: 2rem;
   right: -2rem;
   bottom: -2rem;
-  border: 2px solid #d3b191; /* Цвет и толщина рамки */
+  border: 2px solid #d3b191;
   border-radius: 10rem 0 10rem 0px;
-  z-index: -1; /* Отправляем за изображение */
+  z-index: -1;
 }
 /*---------HEADER END-------*/
 .subtitle {
@@ -317,4 +317,29 @@ section {
 }
 .white-txt {
   color: #fff;
+}
+.image-wrapper-reverse::after {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  right: 2rem;
+  bottom: 2rem;
+  border: 2px solid #d3b191;
+  border-radius: 10rem 0 10rem 0px;
+  z-index: -1;
+}
+.content-flex-reverse {
+  flex-direction: row-reverse;
+  gap: 5rem;
+}
+.section-title {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 5rem;
+}
+.image-wrapper-reverse {
+  position: relative;
 }
